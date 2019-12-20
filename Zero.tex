@@ -1,0 +1,105 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{$0/0$
+~\\
+= 
+~\\
+(0, X$\infty$)
+}
+\date{
+}
+\author{
+~\\
+Damiens ROBERT
+}
+\pagenumbering{arabic}
+
+\begin{document}
+  \maketitle
+
+  \tableofcontents
+
+  \section{The Division as an algorithm}
+  \subsubsection{The Metalanguage}
+   A pseudocode is a Metalanguage. In a pseudocode, we can define a division as an operation denoted by 
+   ~\\
+  \begin{verbatim}
+    /
+  \end{verbatim}
+   This operator has 3 different parts which are :
+   ~\\
+  \begin{verbatim}
+    result = MYSTERY
+    number = number to divide
+    divisor =  number that divides
+  \end{verbatim}
+  The result of the division in this pseudocode is
+  ~\\
+  \begin{verbatim}
+    result = number / divisor
+  \end{verbatim}
+  The result is composed of 2 elements which are the quotient and the remainder.
+  ~\\
+  \begin{verbatim}
+    result = (result.quotient, result.remainder)
+  \end{verbatim}
+  \subsubsection{The Tought}
+  The compiler is the Tought. A Tought is what is thinking and it can also be called a Machine. A tought is the operation that translates a Metalanguage in a Language.
+  \subsubsection{The Language}
+  A programming language (Language) is the translation of a pseudocode (Metalanguage) by human tought (Tought).
+  ~\\
+  ~\\
+  This programming language can than be itself translated into another language, by example, a compiler in order to be executed by a machine.
+  ~\\
+  \begin{verbatim}
+    // Initialisation
+    number = number to divide
+    divisor =  number that divides
+    result =  (quotient = 0, remainder = number)
+    // Computing
+    while (divisor > result.remainder) {
+      result.remainder = number - divisor
+      result.quotient = quotient + 1
+    }
+    // Result
+    return result
+  \end{verbatim}
+  Let's notice that at each step of the iterator, the value of result.remainder and result.quotient varies the same way.
+  \section{The remainder of $0/0$}
+  The variation of the remainder for a single step is :
+  ~\\
+  \begin{verbatim}
+    result.remainder = number - divisor
+  \end{verbatim}
+  When doing MYSTERY = 0 / 0, MYSTERY.remainder = 0 - 0 =  0
+  ~\\
+  When doing the same step n times, we obtain the vector, (0) that we can also write $X(0_n)$
+  \section{The quotient of $0/0$}
+  The variation of the quotient for a single step is :
+  ~\\
+  \begin{verbatim}
+    result.quotient = quotient + 1
+  \end{verbatim}
+  When doing MYSTERY = 0 / 0, MYSTERY.quotient = 0 + 1 = +1
+  ~\\
+  ~\\
+  When doing the same step n times, we obtain the vector, $(a_n)$ that we can also write $+(1_n)$
+  ~\\
+  ~\\
+  I will now refer to my text on (+$\infty$) + (-$\infty$) = 0 to justify that $+(1_n)$ resolves to (+$\infty$) by saying that +1 is a positive number.
+  ~\\
+  ~\\
+  Let's now notice that if we decremented the loop instead of incrementing it, only the sign would change, meaning we would then obtain (-$\infty$) as a quotient.
+  \section{Conclusion}
+  I will now conclude by  saying that there are an infinite possibility for the sign and not only 2 (+ , -). I will demonstrate it in a text talking about symetry.
+  ~\\
+  ~\\
+  \centerline{
+  This infinity of possibilities for the signs are denoted by X.
+  }
+\end{document}

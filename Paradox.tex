@@ -1,0 +1,141 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{array}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{0 is not neutral in a serie
+~\\
+when
+~\\
+S in a Grandi's series
+~\\
+is
+~\\
+a matrix
+}
+\date{
+~\\
+2019-12-16
+}
+\author{
+~\\
+Damiens ROBERT
+}
+\pagenumbering{arabic}
+
+\begin{document}
+  \maketitle
+  \section{Introduction}
+    In this text, we leave the notation of 0 intentionally ambiguous. I will fix this in a following text.
+    \paragraph{}
+      As everybody knows, the Grandi's series is demonstrated by the equality.
+      \begin{equation*}
+      1 - S = S
+      \end{equation*}
+      ~\\
+      Some mathematicians clame that it converges to $1/2$.
+      ~\\
+  \section{Computing the wrong way}
+    ~\\
+    \centerline{
+    1 - S = S
+    }
+    ~\\
+    where S = 1 - 1 + 1 - 1 + ...
+    ~\\
+    ~\\
+    Wrong step is following !
+    ~\\
+    \centerline{
+    1 - S = 1 - (1 - 1 + 1 - 1 + 1 + ...)
+    }
+    ~\\
+    Note that the wrong step is used in the Grandi series demonstration in order to prove $S=1/2$.
+  \section{Computing the right way}
+    ~\\
+    Let
+    ~\\
+    \centerline{
+    1 = (1, 0, 0, 0, ..., 0) where ... is all 0's
+    }
+    ~\\
+    Then make the correct computation for 1 - S by subtracting 2 matrices.
+    ~\\
+    ~\\
+    Then notice that S $\neq$ 1 - S
+  \section{Another wrong way ...}
+    We could then think we just need to subtract 2 matrices of the same size.
+    ~\\
+    \centerline{
+    S + 0 = (1, -1, 1, -1, ... , -1 , 0)
+    }
+    ~\\
+    or  
+    ~\\
+    \centerline{
+    0 + S = (0, 1, - 1, 1, ...)
+    }
+    ~\\
+    Note that if we add those two matrices we get.
+    ~\\
+    ~\\
+    \centerline{
+    0 + S - S + 0 $\neq$ 0
+    }
+    ~\\
+    which would prove adding 0 is not a commutative operation when dealing with infinite series.
+    ~\\
+    ~\\
+    It would also prove that 0 is not the a neutral when dealing with infinite series.
+    \subsection{What it truly is !}
+      \subsubsection{1 - S produces the complement vector}
+        A matrix is also a vector in geometry. When using multiple dimensions in a geographical space, the Natural number $1$ is
+        ~\\
+        ~\\
+        \centerline{
+        1 = (1, 0, 0, 0, ..., 0) where ... is all zero's
+        }
+        ~\\
+        then, if we say that 1 - S is subtracting S to the Natural number 1,
+        ~\\
+        ~\\
+        \centerline{
+        (1 - S) = (0, -1, 1, -1, ... ) where ... is all 1 or -1 one after another 
+        }
+        ~\\
+      \subsubsection{Vector arithmethics resolves correctly}
+        You can then project this vector on the same origin than the vector (S) and find out the vector +(1 - S) is -(S).
+        ~\\
+        ~\\
+        +(1 - S) + -(S) = 0 becomes -(S) + (S) = 0 which resolves to (0) = 0.
+      \subsubsection{Algebra also resolves correctly}
+        ~\\
+        Let
+        ~\\
+        ~\\
+        \centerline{
+        (0) + +(S) + -(S) = 0
+        }
+        ~\\
+        becomes
+        ~\\
+        ~\\
+        \centerline{
+        (0, ..., 0) + (1, -1, 1, -1, ...) - (-1, 1, -1, 1, ...) = 0
+        }
+        ~\\
+        ~\\
+        You will be able to make yourself this formal proof after reading the texte where I prove thaty (+$\infty$) + ($-\infty$) = 0.
+        ~\\
+        ~\\
+        Let's remind that (-S) = (1 - S).
+  \section{Conclusion}
+    S = S, 1 - S = -S, S - S = 0 and 0 = 0 when resolving 1 - S = S properly.
+    ~\\
+    ~\\
+    I will provide another more formal proof in a following text but I first need to introduce notations. This will be done in the (+$\infty$) + ($-\infty$) = 0 article.
+\end{document}

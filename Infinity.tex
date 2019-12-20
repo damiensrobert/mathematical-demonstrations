@@ -1,0 +1,98 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+
+\usepackage{alltt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{$(+\infty) + (-\infty) = 0$
+}
+\date{
+~\\
+2019-12-17
+}
+\author{
+~\\
+Damiens ROBERT
+}
+\pagenumbering{arabic}
+
+\begin{document}
+  \maketitle
+  \section{$+(a_n)$ is a vector}
+  I first need to explain the notation $+(a_n)$.
+  \begin{itemize}
+    \item
+      n is the number of dimension of the vector.
+    \item
+      $a_n$ is the value at the $n^th$ dimension of the vector.
+    \item
+      $(a_n)$ is the set of all the $a_n$ values making the vector.
+    \item
+      The + or the - is the direction of the vector.
+  \end{itemize}
+  \subsection{$+(a_n)$ is also a point}
+    A point is a mathematical object which is alwasys a member of at least one set. Indeed, even if there is only one point, there exists a set A that includes the given point.
+    ~\\
+    The point is denoted by
+    ~\\
+    ~\\
+    \centerline{
+	    $(Xa_n)$ = $X(a_n)$ where X is either + or -.
+    }
+    ~\\
+    Note there is a very special point that could be called the origin which is denoted by (0).
+    ~\\
+    ~\\
+    \centerline{
+	    $(0) = (0_n)$ where n is the cardinality of the set it is included in. 
+    }
+  \section{$-(a_n)$ as an opposite to $+(a_n)$}
+    The + sign in the notation $+(a_n)$ is optional. Indeed, we could distribute the direction to every value of the point in the set and write :
+    ~\\
+    ~\\
+    \centerline{
+	    $+(a_n) = (a_n)$
+    }
+    ~\\
+    The - sign denoting the opposite direction, we could write :
+    ~\\
+    ~\\
+    \centerline{
+	    $-(a_n) = (-a_n) = +(-a_n)$ where $-a_n$ is the opposite value of $a_n$
+    }
+  \section{$+(\infty)$ as ($+\infty$)}
+    Let $+(k_n)$ be a point.
+    ~\\
+    Let each $k_n$ be superior to 0.
+    ~\\
+    ~\\
+    The, $+(\infty)$ can be defined as $+(k_n)$ where n is the defined by the infinite loop :
+    \begin{verbatim}
+      for (n = 1, n > 0, i++) {
+        k takes any value superior to 0 
+      }
+    \end{verbatim}
+  \section{$-(\infty)$ is the opposite of ($+\infty$)}
+    Let's recall that $-(a_n)$ = $+(-a_n)$, and the $+(\infty)$ = $+(k_n)$ where $k_n > 0$.
+    ~\\
+    ~\\
+    We can than say that $-(\infty)$ = $-(k_n)$ where $k_n$ is superior to 0. 
+    ~\\
+    ~\\
+    We can finally say that $-(\infty)$ = $(l_n)$ where $l_n$ is inferior to 0 and $l_n$ = $-k_n$
+  \section{Conclusion}
+    We can now add our two vectors.
+    ~\\
+    ~\\
+    ~\\
+    \centerline{
+	    $+(\infty) + -(\infty)$ = $(k_n) + (l_n)$ where $k_n$ = $-l_n$
+    }
+    ~\\
+    ~\\
+    We can now conclude that the sum of these two vectors results to the orgin pint denoted by (0) that we write 0 as a syntaxic sugar.
+\end{document}

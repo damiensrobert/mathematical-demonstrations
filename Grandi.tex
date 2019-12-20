@@ -1,0 +1,116 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{S = 1 - S
+~\\
+doesn't resolve to
+~\\
+-1/12
+}
+\date{
+~\\
+2019-12-16
+}
+\author{
+~\\
+Damiens ROBERT
+}
+\pagenumbering{arabic}
+
+\begin{document}
+  \maketitle
+  \section{Grandi's series}
+  \paragraph{}
+    As everybody knows, the Grandi's series is demonstrated by subtracting 2 said identical series.
+    \begin{itemize}
+      \item
+  	    $S$
+      \item
+  	    $1 - S$
+    \end{itemize}
+    Let's show why those 2 series are actually different.
+  \section{S is a 1 dimension matrix}
+    \subsection{Transform a serie in a 1 dimension matrix}
+      ~\\
+      \begin{equation*}
+        S = 1 - 1 + 1 - 1 + ... + 1
+      \end{equation*}
+      ~\\
+      or
+      ~\\
+      \begin{equation*}
+        S = 1 - 1 + 1 - 1 + ... - 1
+      \end{equation*}
+      ~\\
+      We can transform S into a 1 dimension matrix using this method :
+      \begin{itemize}
+        \item
+          Using only addition in the series by replacing the substraction of the number $n_i$ by $+ (-n_i)$ where i is the position in the serie.
+        \item
+	  Put each term of the serie of $T$ terms in a 1 dimension matrix of size $T$
+      \end{itemize}
+
+      For the serie $S$, we then get :
+      ~\\
+      \begin{equation*}
+        S = (1, -1, ..., 1)
+      \end{equation*}
+      ~\\
+      or
+      ~\\
+      \begin{equation*}
+        S = (1, -1, ..., -1)
+      \end{equation*}
+      ~\\
+    \subsection{0 as a 1 dimension matrix ?}
+      0 depends on the the serie it is being added.
+    \subsection{justification}
+      In order to be able to add 2 matrices, the matrices needs to have the same size.
+    \subsection{Example with S}
+      ~\\
+      \centerline{
+      S = (1, -1, ... , 1)
+      }
+      ~\\
+      \centerline{
+      S = (0,  0, ... , 0)
+      }
+      ~\\
+      or
+      ~\\
+      \centerline{
+      S = (1, -1, ... , -1)
+      }
+      ~\\
+      \centerline{
+      S = (0,  0, ... , 0)
+      }
+    \section{Conclustion}
+      We cannot substract $S$ from 1 because 1 is a natural number and $S$ is a matrix.
+      ~\\
+      ~\\
+      What is 1 as a matrix ? All 1's ? Only one 1 ? Multiple 1's ?
+      ~\\
+      ~\\
+      The 1 from natural number encoded as a matrix of size N is this matrix :
+      ~\\
+      ~\\
+      \centerline{
+      1 = (1,  1, ... , 1)
+      }
+      ~\\
+      or this one :
+      ~\\
+      \centerline{
+      1 = (1,  0, ... , 0)
+      }
+      ~\\
+      or yet another one ?
+      ~\\
+      ~\\
+      What is sure, is that 1 - S won't be the same dependending on your definition of 1 represented as a matrix and this ambiguity is what leads to a mistake in the Grandi's series demonstration.
+\end{document}
