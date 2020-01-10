@@ -6,9 +6,11 @@
 \usepackage{amssymb}
 
 \title{
+Theorem of Completeness
 }
-\date{01-07-2020
+\date{
 ~\\
+01-07-2020
 }
 \author{
 ~\\
@@ -18,7 +20,49 @@ Damiens ROBERT
 
 \begin{document}
   \maketitle
-  \section{}
+  \section{Introduction}
+  Godel demonstrated that not a single finite logical model could be complete. In order to demonstrate this result, he implicitely used the aristoteleician logic based on the Exclusive Tiers. The Exclusive Tiers means that a logical demonstration is either true, either false and doesn't accept any other result.
+  ~\\
+  ~\\
+  If a demonstration didn't follow the aristoteleician logic and was not bi-exclusive, we should demonstrate that a result covers every possible use cases included in the logic we are currently using.
+  ~\\
+  ~\\
+  In set theory there are multiple cases but let's take the 4 most common which can be used to find every other use cases.
+  ~\\
+  \begin{itemize}
+  \item
+  A result is demonstrated True AND NOT False : Only True
+  \item
+  A result is demonstrated NOT True AND False : Only False
+  \item
+  A result is demonstrated True AND False : Paradox
+  \item
+  A result is demonstrated NOT True AND NOT False : Not covered by the logical model.
+  \end{itemize}
+  ~\\
+  Let's now notice that the aristoteleician logic only covers the first 2 cases and no other cases is possible. It is bi-exclusive !
+  \section{A complete model}
+  A complete model is defined as a model whose axiomatics doesn't introduce cases not covered by the logic used in order to build the model.
+  ~\\
+  ~\\
+Let's now notice that it is not the case of the set theory. Indeed, in the aristotelician logic, a result is bi-exclusive but it is not the case of set theory !  \subsection{Proof}
+  let's take the set of the demonstrations whose results are true.
+  ~\\
+  Let's also take the set of demonstrations whose results are false. 
+  ~\\
+  ~\\
+  With set theory, it would be completely valid to say that the intersection of those 2 sets is not empty !
+  ~\\
+  ~\\
+  In the aristoteleician logic, the emptiness of the intersection is built into the logical rules.
+  ~\\
+  ~\\
+  \section{Conclusion}
+  There lies the problem with the theorem of incompleteness of Godel. It uses a bi-exclusive logic that forbids combinated results. As set theory allows it and is handled with a logic that forbids it, it results in an inconsistence of the model and leads Godel to conclude that incompleteness of the model.
+  ~\\
+  ~\\
+  Let's now demonstrate that a complete theory can be build with set of axioms at the condition of using the proper logic. In the following demonstration, the axioms used to build the model are the language and the logic used to manipulate the axioms is the metalanguage.
+  \subsection{Demonstration}
   Let $\omega$ be the universal set.
   ~\\
   Let $\dot{\omega}$ be also the universal set.
@@ -30,9 +74,9 @@ Damiens ROBERT
   ~\\
   Let's prove that there exists a set such as $\epsilon$.
   ~\\
-  In order to do so, we need to find a bijective relation between 2 different sets and the bijective relation must be true for any given subset of $\omega$.
   ~\\
-  Such a relation exists for numbers. This relation consist of adding a number to itself.
+  In order to do so, we need to find a bijective relation between 2 sets and the bijective relation must be true for any given subset of $\omega$.
   ~\\
-  $\epsilon$ is then any set of numbers and $\dot{\epsilon} is the set of same cardinality than $\espilon$ where any number k in $\epsion$ is k+k in $\dot{\epsion}.
+  ~\\
+  Such a relation always exists : the identity.
 \end{document}
