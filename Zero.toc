@@ -1,7 +1,0 @@
-\contentsline {section}{\numberline {1}The Division as an algorithm}{1}
-\contentsline {subsubsection}{\numberline {1.0.1}The Metalanguage}{1}
-\contentsline {subsubsection}{\numberline {1.0.2}The Tought}{2}
-\contentsline {subsubsection}{\numberline {1.0.3}The Language}{2}
-\contentsline {section}{\numberline {2}The remainder of $0/0$}{2}
-\contentsline {section}{\numberline {3}The quotient of $0/0$}{3}
-\contentsline {section}{\numberline {4}Conclusion}{3}
